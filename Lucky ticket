@@ -1,0 +1,14 @@
+a = list(map(int,list(input())))
+b = 6-len(a)
+if len(a)<6:
+    a=a[::-1]
+    for i in range(b):
+        a.append(0)
+    a=a[::-1]
+c = sum(a[:3])
+d = sum(a[3:])
+if c==d:
+    print('YES')
+else:
+    print('NO')
+
