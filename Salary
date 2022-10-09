@@ -1,0 +1,22 @@
+a,b,c = map(int,input().split())
+if a>b:
+    if c>a:
+        print(c-b)
+    else:
+        if b>c:
+            print(a-c)
+        else:
+            print(a-b)
+elif a == b:
+    if c>a:
+        print(c-a)
+    else:
+        print(a-c)
+else:
+    if c>b:
+        print(c-a)
+    else:
+        if a>c:
+            print(b-c)
+        else:
+            print(b-a)
