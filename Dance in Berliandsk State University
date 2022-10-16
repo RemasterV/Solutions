@@ -1,0 +1,17 @@
+n = int(input())
+ndance = list(map(int, input().split()))
+m = int(input())
+mdance = list(map(int, input().split()))
+ndance.sort()
+mdance.sort()
+count = 0
+for i in ndance:
+    for j in mdance:
+         if i == j or abs(i-j)<=1:
+            count += 1
+            mdance.remove(j)
+            break
+    
+
+print(count)
+        
