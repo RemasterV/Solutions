@@ -1,0 +1,16 @@
+n,k = map(int,input().split())
+c = 0
+d = 0
+while True:
+    d += 1
+    c = c + d*5
+    if c == 240-k:
+        break
+    elif c > 240-k:
+        d -= 1
+        break
+if d>=n:    
+    print(n)
+elif d<n:
+    print(d)
+    
