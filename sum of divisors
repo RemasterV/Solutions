@@ -1,0 +1,12 @@
+N = int(input())
+b = []
+c = 1
+while c<=N**0.5:
+    if N%c == 0:
+        if c == N//c:
+            b.append(c)
+        else:
+            b.append(c)
+            b.append(N//c)
+    c = c + 1
+print(sum(b))
