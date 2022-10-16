@@ -1,0 +1,11 @@
+n = int(input())
+i = 0
+c=0
+d=0
+while True:
+    i += 1
+    c = 0.5*i*(i+1)
+    d = d+c
+    if d > n:
+        break
+print(i-1)
