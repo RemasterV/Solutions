@@ -1,0 +1,17 @@
+n = int(input())
+dict1 = {}
+
+for i in range(n):
+    s = input()
+    if s not in dict1:
+        dict1[s]=1
+        print('OK')
+    else:
+        count = 2
+        s = s+str(1)
+        while s in dict1:
+            s = s[:-1]
+            s = s+str(count)
+            count+=1
+        dict1[s]=1
+        print(s)
