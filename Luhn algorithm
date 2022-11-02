@@ -1,0 +1,11 @@
+numbers = input()[::-1]
+count = 0
+for i,k in enumerate(numbers):
+    j=int(k)
+    if i%2:        
+        j*=2        
+        if j>9:
+            j-=9
+    count+=j        
+print(not count%10)
+    
