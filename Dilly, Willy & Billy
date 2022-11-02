@@ -1,0 +1,39 @@
+W=set()
+3
+B=set()
+4
+a =[]
+5
+while a != ['конец']:
+6
+    a = list(input().split())
+7
+    if a[0]=='Дили:':
+8
+        D.add(a[1])
+9
+    elif a[0]=='Вили:':
+10
+        W.add(a[1])
+11
+    elif a[0]=='Били:':
+12
+        B.add(a[1])
+13
+K = {'Дили':len(D),'Вили':len(W),'Били':len(B)}
+14
+Z = dict(sorted(K.items(), key=lambda item: item[1],reverse = True))
+15
+for key,value in Z.items(): 
+16
+    print(f'Количество уникальных комментаторов у {key} - {value}')
+17
+​
+18
+​
+19
+​
+20
+​
+21
+​
